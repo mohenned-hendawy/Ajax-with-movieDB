@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.5.1.min.js" defer></script>
+    <script src="js/popper.min.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="js/index.js" defer type="module"></script>
+</head>
+<body>
+
+
+    <div class="container-fluid position-fixed sidebar">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-9 vh-100 dark-sidebar d-flex flex-column justify-content-between" id="darkSidebar">
+                        <ul class="list-style-type-none" id="ulLinks">
+                            <li class="pb-2 item1"><a href="#" class="now_playing">Now playing</a></li>
+                            <li class="py-2 item2"><a href="#" class="popular">Popular</a></li>
+                            <li class="py-2 item3"><a href="#" class="top_rated">Top Rated</a></li>
+                            <li class="py-2 item4"><a href="#" class="popular">Trending</a></li>
+                            <li class="py-2 item5"><a href="#" class="upcoming">Upcoming</a></li>
+                            <li class="py-2 item6"><a href="#" id="contactUs">contact Us</a></li>
+                        </ul>
+                        <div class="sidebar-bottom">
+                            <div class="sidebar-icons">
+                                <span class="py-3 mx-1 d-inline-block"><i class="fab fa-facebook-f"></i></span>
+                                <span class="py-3 mx-1 d-inline-block"><i class="fab fa-twitter"></i></span>
+                                <span class="py-3 mx-1 d-inline-block"><i class="fas fa-globe"></i></span>
+                            </div>
+                            <p>Copyright Â© 2019 All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 vh-100 ligth-sidebar py-4 d-flex flex-column justify-content-between">
+                        <div class="text-center">
+                            <img src="img/logo.png" class="w-75 m-auto" alt="">
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-times d-none" id="closeIcon"></i>
+                            <i class="fa fa-align-justify" id="menuIcon"></i>
+                        </div>
+                        <div class="text-center ligth-sidebar-botton">
+                            <i class="fas fa-globe d-block"></i>
+                            <i class="fas fa-share-alt mt-3"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section1 d-flex p-5 justify-content-center  container">
+        <input type="search" class="form-control w-50 m-4 bg-transparent border-bottom"  id="searchByWrod" placeholder="get movies by word...">
+        <input type="search" class="form-control w-50 m-4 bg-transparent border-bottom" id="searchMoviesInput" placeholder="search...">
+    </section>
+    <section class="section2">
+        <div class="container">
+            <div class="row" id="container">
+                
+            </div>
+        </div>
+    </section>
+    <section class="section3 p-5" id="contactUs">
+        <div class="container">
+            <h2 class="text-white mb-5">Contact Us...</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <input type="text" id="nameInput" class="form-control bg-transparent border-bottom w-100" placeholder="Enter your Name">
+                    <p class="text-danger d-none mt-2">at least 3 chars</p>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" id="emailInput" class="form-control bg-transparent border-bottom w-100" placeholder="Enter Email">
+                    <p class="text-danger d-none mt-2">you must include "@", ".com"</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <input type="number" id="ageInput" class="form-control bg-transparent border-bottom w-100" placeholder="Enter Age">
+                    <p class="text-danger d-none mt-2">your real age ya bro</p>
+                </div>
+                <div class="col-md-6">
+                    <input type="number" id="phoneInput" class="form-control bg-transparent border-bottom w-100" placeholder="Enter phone">
+                    <p class="text-danger d-none mt-2">write the right phone</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <input type="password" id="passInput" class="form-control bg-transparent border-bottom w-100" placeholder="Enter Password">
+                    <p class="text-danger d-none mt-2">at least 5 chars include sympols</p>
+                </div>
+                <div class="col-md-6">
+                    <input type="password" id="repassInput" class="form-control bg-transparent border-bottom w-100" placeholder="Repassword">
+                    <p class="text-danger d-none mt-2">Repassword please</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
